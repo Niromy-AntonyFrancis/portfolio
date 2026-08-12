@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niromy Antony Francis | UI/UX Designer &amp; Frontend Developer</title>
+<meta name="description" content="Portfolio of Niromy Antony Francis — BICT undergraduate at University of Vavuniya specializing in UI/UX Design and Frontend Development.">
+<meta name="keywords" content="Niromy Antony Francis, UI/UX Designer, Frontend Developer, BICT, University of Vavuniya, Portfolio">
+<meta name="author" content="Niromy Antony Francis">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Niromy Antony Francis | UI/UX Designer & Frontend Developer">
+<meta property="og:description" content="BICT Undergraduate — UI/UX Design, Frontend Development & Human Computer Interaction.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <span>N</span><span>A</span><span>F</span>
+  </div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ================= SCROLL PROGRESS ================= -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container" aria-label="Primary">
+    <a href="#home" class="logo">Niromy<span class="logo-dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <canvas id="particles"></canvas>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-inner container">
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-up">Hello, I'm</p>
+    <h1 class="hero-name reveal-up" style="--d:0.05s">Niromy Antony Francis</h1>
+    <p class="hero-role reveal-up" style="--d:0.1s">Bachelor of Information and Communication Technology Undergraduate</p>
+
+    <div class="hero-typing reveal-up" style="--d:0.15s">
+      <span class="typing-prefix">I'm a</span>
+      <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+    </div>
+
+    <p class="hero-desc reveal-up" style="--d:0.2s">
+      Crafting intuitive interfaces and clean code — blending design thinking with
+      front-end engineering to build digital experiences people enjoy using.
+    </p>
+
+    <div class="hero-buttons reveal-up" style="--d:0.25s">
+      <a href="assets/Niromy_Antony_Francis_CV.pdf" download class="btn btn-primary">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+      <a href="#projects" class="btn btn-outline">
+        <i class="fa-solid fa-diagram-project"></i> View Projects
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <i class="fa-solid fa-paper-plane"></i> Contact Me
+      </a>
+    </div>
+
+    <div class="hero-socials reveal-up" style="--d:0.3s">
+      <a href="https://www.linkedin.com/in/niromyantonyfrancis" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/Niromy-AntonyFrancis" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:nironiromy87@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <!-- Photo + orbiting tech icons -->
+  <div class="hero-visual">
+    <div class="orbit-glow" aria-hidden="true"></div>
+    <div class="orbit-ring orbit-ring-outer" aria-hidden="true"></div>
+    <div class="orbit-ring orbit-ring-inner" aria-hidden="true"></div>
+
+    <div class="orbit-icons" aria-hidden="true">
+      <span class="orbit-icon oi-1" title="GitHub"><img src="https://cdn.simpleicons.org/github/E44D26" alt="GitHub" loading="lazy"></span>
+      <span class="orbit-icon oi-2" title="Java"><img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="Java" loading="lazy"></span>
+      <span class="orbit-icon oi-3" title="C++"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++" loading="lazy"></span>
+      <span class="orbit-icon oi-4" title="C"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C" loading="lazy"></span>
+      <span class="orbit-icon oi-5" title="Figma"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" loading="lazy"></span>
+      <span class="orbit-icon oi-6" title="Python"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></span>
+      <span class="orbit-icon oi-7" title="C#"><img src="https://cdn.simpleicons.org/dotnet/512BD4" alt="C#" loading="lazy"></span>
+    </div>
+
+    <div class="photo-frame" id="heroPhoto">
+      <img src="images/niromy.jpg" alt="Niromy Antony Francis">
+    </div>
+
+  </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span> Scroll
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Get to know me</p>
+    <h2 class="section-title reveal-up">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-card glass">
+          <div class="about-avatar">
+            <img src="images/niromy.jpg" alt="Niromy Antony Francis">
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal-right">
+        <p>
+         I'm a second-year <strong>Bachelor of Information and Communication Technology </strong> undergraduate at
+		 the  <strong>University of Vavuniya </strong>, driven by a simple belief: good technology should feel effortless to use. 
+		 That belief draws me toward  <strong>UI/UX Design and Frontend Development </strong> — two sides of the same problem: how something looks, and how something works.
+        </p>
+        <p>
+         My curiosity spans  <strong>Web Technologies, version control </strong> with  <strong>GitHub </strong>, and  <strong>Human-Computer Interaction.  </strong>
+		 I'm interested not just in how to build an interface, but why a particular layout, colour, 
+		 or flow makes an experience feel natural. Alongside design, I'm building a strong foundation in software development through  <strong>Java, C++ </strong>, and  <strong>database-driven systems. </strong>
+        </p>
+        <p>
+          Beyond the classroom, I volunteer with tech and community-driven programs — experience that has taught
+		  me as much about leadership and collaboration as my coursework has taught me about code.
+        </p>
+
+        <div class="about-tags">
+          <span class="tag">UI/UX Design</span>
+          <span class="tag">Frontend Development</span>
+          <span class="tag">Web Technologies</span>
+          <span class="tag">Human Computer Interaction</span>
+          <span class="tag">Software Development</span>
+          <span class="tag">Open Source</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Academic background</p>
+    <h2 class="section-title reveal-up">Education</h2>
+
+    <div class="edu-card glass reveal-up">
+      <div class="edu-header">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h3>University of Vavuniya</h3>
+          <p class="edu-degree">Bachelor of Information and Communication Technology (BICT)</p>
+          <p class="edu-meta"><i class="fa-solid fa-location-dot"></i> Vavuniya, Sri Lanka &nbsp;•&nbsp; <i class="fa-regular fa-calendar"></i> 2nd Year, In Progress</p>
+        </div>
+      </div>
+
+      <div class="edu-divider"></div>
+
+      <h4 class="edu-course-title">Core Coursework</h4>
+      <div class="course-grid">
+        <div class="course-item"><i class="fa-solid fa-diagram-project"></i><span>System Analysis and Design</span></div>
+        <div class="course-item"><i class="fa-solid fa-hand-pointer"></i><span>Human Computer Interaction</span></div>
+        <div class="course-item"><i class="fa-solid fa-code"></i><span>Web Development</span></div>
+        <div class="course-item"><i class="fa-solid fa-database"></i><span>Database Systems</span></div>
+        <div class="course-item"><i class="fa-solid fa-shapes"></i><span>Computer Graphics</span></div>
+        <div class="course-item"><i class="fa-solid fa-terminal"></i><span>Programming (Java / C++)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">What I work with</p>
+    <h2 class="section-title reveal-up">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-block reveal-up">
+        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+        <div class="bar-item">
+          <div class="bar-label"><span>HTML5</span><span>95%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>CSS3</span><span>90%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Java</span><span>75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Python</span><span>65%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>C#</span><span>55%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="55"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Git</span><span>70%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>GitHub</span><span>80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-block reveal-up" style="--d:0.1s">
+        <h3><i class="fa-solid fa-pen-ruler"></i> Design</h3>
+        <div class="bar-item">
+          <div class="bar-label"><span>Figma</span><span>95%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Canva</span><span>80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+
+        <h3 class="skill-block-spacer"><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+        <div class="softskill-chips">
+          <span class="chip"><i class="fa-solid fa-users"></i> Leadership</span>
+          <span class="chip"><i class="fa-solid fa-comments"></i> Communication</span>
+          <span class="chip"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+          <span class="chip"><i class="fa-solid fa-people-arrows"></i> Teamwork</span>
+          <span class="chip"><i class="fa-regular fa-clock"></i> Time Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Selected work</p>
+    <h2 class="section-title reveal-up">Projects</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card glass reveal-up">
+        <div class="project-img">
+          <img src="images/projects/coffee_shop.png" alt="Coffee Shop Mobile App UI">
+        </div>
+        <div class="project-body">
+          <h3>Coffee Shop Mobile App UI</h3>
+          <p>A warm, appetite-driven mobile ordering experience designed in Figma — from onboarding to checkout, with a focus on clear visual hierarchy.</p>
+          <div class="badges">
+            <span class="badge">Figma</span>
+            <span class="badge">UI Design</span>
+            <span class="badge">Prototyping</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis/coffeeapp" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/posts/niromyantonyfrancis_uiux-figma-appdesign-activity-7446493807292022784-mtLM" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--d:0.05s">
+        <div class="project-img">
+          <img src="images/projects/studentportal.png" alt="Student Portal UI Design">
+        </div>
+        <div class="project-body">
+          <h3>Student Portal UI Design</h3>
+          <p>A redesign concept for a university student portal — timetable, grades, and announcements simplified into a clean, distraction-free dashboard.</p>
+          <div class="badges">
+            <span class="badge">Figma</span>
+            <span class="badge">UX Research</span>
+            <span class="badge">Wireframing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/posts/niromyantonyfrancis_uiux-figma-prototype-activity-7451894950775922688-d_2E" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--d:0.1s">
+        <div class="project-img">
+          <img src="images/projects/pharmacy_management.png" alt="Pharmacy Management System">
+        </div>
+        <div class="project-body">
+          <h3>Pharmacy Management System</h3>
+          <p>A desktop application built in Java for stock tracking, billing, and sales records — designed for small pharmacy outlets to reduce manual errors.</p>
+          <div class="badges">
+            <span class="badge">Java</span>
+            <span class="badge">OOP</span>
+            <span class="badge">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis/Pharmacymanagementsystem" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://lnkd.in/p/gP5CzYyB" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up">
+        <div class="project-img">
+          <img src="images/projects/library_management.png" alt="Library Management System">
+        </div>
+        <div class="project-body">
+          <h3>Library Management System</h3>
+          <p>A UI/UX design in Figma for a Java-based system to manage book inventory, member records, and issue/return workflows — designed with a simple, form-driven interface for intuitive, everyday use.</p>
+          <div class="badges">
+            <span class="badge">UI/UX Design</span>
+            <span class="badge">Figma</span>
+            <span class="badge">Java</span>
+            <span class="badge">Swing</span>
+            <span class="badge">Database</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis/Library_management_System" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/posts/niromyantonyfrancis_figmadesign-uiux-teamwork-activity-7447248111481016320-8dOU" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--d:0.05s">
+        <div class="project-img">
+          <img src="images/projects/portfolio.png" alt="Personal Portfolio Website">
+        </div>
+        <div class="project-body">
+          <h3>Personal Portfolio Website</h3>
+          <p>This very site — a responsive, glassmorphism-styled portfolio built from scratch with semantic HTML, CSS and vanilla JavaScript.</p>
+          <div class="badges">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://lnkd.in/p/g6STRf-D" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--d:0.1s">
+        <div class="project-img">
+          <img src="images/projects/Greenlife.png" alt="GreenLife App UI Design">
+        </div>
+        <div class="project-body">
+          <h3>GreenLife App UI Design</h3>
+          <p>A clean, eco-conscious mobile app UI concept designed in Figma, built around sustainable living features with a calm, green-toned visual language.</p>
+          <div class="badges">
+            <span class="badge">Figma</span>
+            <span class="badge">UI Design</span>
+            <span class="badge">Mobile App</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis/greenlife" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/posts/niromyantonyfrancis_greenlife-uiuxdesign-uidesign-activity-7492611512998703104-fMJq" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--d:0.15s">
+        <div class="project-img">
+          <img src="images/projects/MindMithra.png" alt="MindMithra App UI Design">
+        </div>
+        <div class="project-body">
+          <h3>MindMithra App UI Design</h3>
+          <p>A supportive mental wellness companion app UI, designed in Figma with approachable visuals and calming interactions for student well-being.</p>
+          <div class="badges">
+            <span class="badge">Figma</span>
+            <span class="badge">UX Research</span>
+            <span class="badge">Wellness App</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Niromy-AntonyFrancis/mindmithra" class="btn-sm btn-outline-sm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/posts/niromyantonyfrancis_renido-wie-universityofvavuniya-activity-7465426286958682113-DYxq" class="btn-sm btn-fill-sm" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Where I've contributed</p>
+    <h2 class="section-title reveal-up">Experience &amp; Involvement</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">Ongoing</span>
+          <h3>ZeroPlastic Community Initiative</h3>
+          <p>Served as <strong><u>Director of Documentation </u></strong>for a community-driven sustainability campaign, leading the creation and organization of outreach materials and awareness content to promote plastic-free habits.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--d:0.05s">
+        <div class="timeline-dot"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2026 – Present</span>
+          <h3>GitHub &amp; Version Control Workshops</h3>
+		  <p>Attended and assisted in hands-on workshops teaching Git fundamentals, branching, and collaborative workflows to fellow students.</p>
+
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"><i class="fa-solid fa-microchip"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2026 – Present</span>
+          <h3>USBus Program — U.S. Embassy Sri Lanka</h3>
+		  <p>Selected participant in the American Spaces Sri Lanka USBus Program, engaging in professional development sessions on leadership and digital skills.</p>
+
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--d:0.05s">
+        <div class="timeline-dot"><i class="fa-solid fa-leaf"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2026</span>
+          <h3>Event Coordinator</h3>
+         <p>Coordinated events and activities for the ZeroPlastic Community Initiative, and independently led an individual project promoting plastic-free habits through outreach and awareness content.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"><i class="fa-brands fa-github"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2026</span>
+          <h3>Volunteer Leader</h3>
+          <p>Participated in workshop sessions covering UI/UX design fundamentals and prototyping as part of hackathon preparation, applying key concepts to real design challenges.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--d:0.05s">
+        <div class="timeline-dot"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2025</span>
+          <h3>IEEE Student Branch Activities</h3>
+          <p>Active participant in IEEE technical talks, workshops, and student branch events focused on emerging technology and career development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Recognized learning</p>
+    <h2 class="section-title reveal-up">Certificates</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card glass reveal-up">
+        <div class="cert-img"><img src="images/certs/ieee-wie-jaffna.jpg" alt="Empowering Women Entrepreneurship workshop certificate"></div>
+        <h3>Empowering Women Entrepreneurship Workshop</h3>
+        <p>IEEE WIE Student Branch Affinity Group, University of Jaffna</p>
+        <span class="cert-year">2025</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.05s">
+        <div class="cert-img"><img src="images/certs/ieee-career-compass.jpg" alt="IEEE Career Compass Workshop letter of appreciation"></div>
+        <h3>IEEE Career Compass Workshop</h3>
+        <p>Volunteer &mdash; IEEE Student Branch, University of Vavuniya</p>
+        <span class="cert-year">2025</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.1s">
+        <div class="cert-img"><img src="images/certs/zeroplastic.jpg" alt="ZeroPlastic Volunteer Awards certificate of excellence"></div>
+        <h3>ZeroPlastic Volunteer Awards &mdash; Hero Volunteer</h3>
+        <p>ZeroPlastic Movement</p>
+        <span class="cert-year">2025</span>
+      </div>
+      <div class="cert-card glass reveal-up">
+        <div class="cert-img"><img src="images/certs/intro-to-java.jpg" alt="Introduction to Java course certificate"></div>
+        <h3>Introduction to Java</h3>
+        <p>Sololearn</p>
+        <span class="cert-year">2026</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.05s">
+        <div class="cert-img"><img src="images/certs/usbus.jpg" alt="USBus Program certificate of appreciation"></div>
+        <h3>USBus Program</h3>
+        <p>U.S. Embassy Sri Lanka</p>
+        <span class="cert-year">2026</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.1s">
+        <div class="cert-img"><img src="images/certs/elibraryusa.jpg" alt="eLibraryUSA Online Training certificate of completion"></div>
+        <h3>eLibraryUSA Online Training Program</h3>
+        <p>American Spaces &mdash; U.S. Dept. of State</p>
+        <span class="cert-year">2026</span>
+      </div>
+      <div class="cert-card glass reveal-up">
+        <div class="cert-img"><img src="images/certs/microsoft-github-workshop.jpg" alt="Microsoft Student Ambassadors GitHub workshop certificate"></div>
+        <h3>Intro to GitHub &amp; GitHub Actions</h3>
+        <p>Microsoft Student Ambassadors</p>
+        <span class="cert-year">2026</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.05s">
+        <div class="cert-img cert-img-badge"><img src="images/certs/github-for-beginners-badge.png" alt="GitHub for Beginners badge"></div>
+        <h3>GitHub for Beginners</h3>
+        <p>Completion Badge</p>
+        <span class="cert-year">2026</span>
+      </div>
+      <div class="cert-card glass reveal-up" style="--d:0.1s">
+        <div class="cert-img cert-img-badge"><img src="images/certs/ms-learn-student-ambassador-badge.png" alt="Microsoft Learn Student Ambassador Gold badge"></div>
+        <h3>Student Ambassador &mdash; Gold</h3>
+        <p>Microsoft Learn</p>
+        <span class="cert-year">2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Moments &amp; snapshots</p>
+    <h2 class="section-title reveal-up">Gallery</h2>
+
+    <div class="gallery-grid">
+      <button class="gallery-item reveal-up" data-img="images/gallery/zeroplastic-nature-nest.jpg" data-caption="Nature Nest Solution Awareness Program &mdash; ZeroPlastic Vavuniya Community">
+        <img src="images/gallery/zeroplastic-nature-nest.jpg" alt="Nature Nest Solution Awareness Program"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/department-group-photo.jpg" data-caption="Department Group Photo, University of Vavuniya">
+        <img src="images/gallery/department-group-photo.jpg" alt="Department group photo"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/techmeetup-12.jpg" data-caption="TechMeetup 12.0 &mdash; Data Analytics and Industrial Training Insights">
+        <img src="images/gallery/techmeetup-12.jpg" alt="TechMeetup 12.0 group photo"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/career-compass.jpg" data-caption="Career Compass Program &mdash; IEEE Student Branch">
+        <img src="images/gallery/career-compass.jpg" alt="Career Compass event"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/usbus-bringing-america.jpg" data-caption="USBus Mobile American Space &mdash; Bringing America to You">
+        <img src="images/gallery/usbus-bringing-america.jpg" alt="USBus program session"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/github-dev-day-2026.jpg" data-caption="GitHub Dev Day 2026">
+        <img src="images/gallery/github-dev-day-2026.jpg" alt="GitHub Dev Day 2026 group photo"></button>
+      <button class="gallery-item reveal-up" data-img="images/gallery/zeroplastic-environment-week.jpg" data-caption="National Environment Week 2026 &mdash; ZeroPlastic Vavuniya Community">
+        <img src="images/gallery/zeroplastic-environment-week.jpg" alt="National Environment Week awareness programme"></button>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-frame" id="lightboxFrame"><img id="lightboxImg" src="" alt=""></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">Let's talk</p>
+    <h2 class="section-title reveal-up">Contact Me</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <p>Have an opportunity, a project, or just want to say hi? My inbox is always open — I'll get back to you as soon as I can.</p>
+
+        <div class="info-row">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <span class="info-label">Email</span>
+            <a href="mailto:nironiromy87@gmail.com">nironiromy87@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <span class="info-label">Location</span>
+            <span>Veravil,Poonakary,Kilinochchi.</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/niromyantonyfrancis" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Niromy-AntonyFrancis" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:nironiromy87@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form glass reveal-right" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+          <span class="form-error" data-for="name"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="form-error" data-for="email"></span>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          <span class="form-error" data-for="subject"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a bit more..." required></textarea>
+          <span class="form-error" data-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <span class="btn-text">Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-success" id="formSuccess" role="status">Message sent! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo">Niromy<span class="logo-dot">.</span></a>
+      <p>UI/UX Designer &amp; Frontend Developer, crafting clean, human-centred digital experiences.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/niromyantonyfrancis" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/Niromy-AntonyFrancis" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:nironiromy87@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Niromy Antony Francis. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
